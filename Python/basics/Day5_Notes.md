@@ -173,4 +173,85 @@ for r in m:
 print(odds)
 ---output: [1, 3, 5, 7, 9]
 
+>>>> TUPLES
+   A Tuple is a collection which is ordered and unchangeable.
+>  it is declared as
+      tuple1= ("1,2,"shiv","raj")
+> Tuple is immutable
+> Occupy less space than list
+>  takes less time to execute than list
+>>>> Creating tuple
+>    Using tuple display construct
+    tuple1 = ()
+    tuple2= (var1,var2..)
+>  Creating single element tuple
+      tuple1(1,)
+ # Creating tuple from string
+   t1 =tuple('world')
+   >> t1
+>> ('w','o','r','l','d')
+
+# Creating from list
+list1 = [1,2,3,4,5]
+t1=tuple(list1)
+>> t1
+  (1.2.3.4.5)
+#  Traversing tuples
+  t1=(1,2,3,4,5)
+   for i in t1
+    print(i)
+>  or for i in range(len(t1)):
+     print(t1[i])
+# Joining of tuples
+  t2 = (1,2,3)
+  t3= (4,5,6)
+  t4 = t2 + t3
+  print(t4)
+# Repeating of tuples
+t1=(1,2,3)
+t2=t1*3
+print(t2)
+-- output : (1,2,3,1,2,3,1,2,3)
+# Slicing the tuples
+The syntax is:
+T = [start;stop:step]
+>> Example:
+  tuple1 = (12,13,14,15,16,17)
+  t2= tuple1[0:5:2]
+>> print(t2)
+ -- output:(12,14,16)
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
