@@ -24,6 +24,21 @@
     print(dict1)
      dict1['Y.O.B']=2021
      print(dict1)
+# Loop through a Dictionary
+    dict1={"car":"marauti", "Animal":"Lion","year":2020 }
+    for x in dict1:
+    print(x)
+> This will print index values
+          OR
+  for x in dict1:
+ print(dict1[x])
+> This will print values
+
+ ## item function to return value of function
+       dict1={"car":"marauti", "Animal":"Lion","year":2020 }
+       for x,y in dict1.items():
+       print(x,y)
+  
 ## Function uses in dictionary
 1. len() -- x=len(dict1)
 2. pop()
