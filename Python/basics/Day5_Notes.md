@@ -8,7 +8,7 @@ Ans: List is a collection of different or similar types of values and different 
 # PROPERTIES
   > List is mutable and in ordered.- mutable means we can change the value when list is created
 
-## LLIST OPERATIONS ( Indexing ,Slicing)
+## LIST OPERATIONS ( Indexing ,Slicing)
 > Indexing - stare with 0 to ( n-1 ) this is called forward indexing.
   from given example , a[0] - "Ram", a[3] = 3;
 > Backward indexing start with the toal number of elements and ends with -1 not 0.
@@ -38,8 +38,9 @@ print(my_list[::-1])   # Output: [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 print(my_list[-6:-1]) # Output: 4,5,6,7,8  (from the 6th character from the end up to the last)
 
 ####
- COMMON LIST METHOD(append(), extend(), insert(), remove(), pop(), sort(), reverse() )
-> The append() method in Python lists is used to add a single element to the end of an existing list. This method modifies the original list in place, meaning it does not create a new list but rather updates the one it's called upon. 
+ # COMMON LIST METHOD(append(), extend(), insert(), remove(), pop(), sort(), reverse() )
+# The append() :-
+    method in Python lists is used to add a single element to the end of an existing list. This method modifies the       original list in place, meaning it does not create a new list but rather updates the one it's called upon. 
   Syntax:
         list_name.append(element)
     my_list = [1, 2, 3]
@@ -57,8 +58,8 @@ print(f"After appending another_list: {my_list}")
 --- Output: After appending another_list: [1, 2, 3, , ['a', 'b']]
 
 
->> extend()
-The extend() method in Python lists is used to add all the elements of an iterable (like another list, tuple, set, or string) to the end of the current list. It modifies the original list in place, meaning it does not create a new list but rather expands the existing one. The extend() method returns None.
+# extend()
+The extend() :-  method in Python lists is used to add all the elements of an iterable (like another list, tuple, set, or string) to the end of the current list. It modifies the original list in place, meaning it does not create a new list but rather expands the existing one. The extend() method returns None.
 Syntax:
    list.extend(iterable)
 # Extending a list with another list
@@ -68,8 +69,8 @@ my_list.extend(another_list)
 print(my_list)
 --- Output: [1, 2, 3, 4, 5, 6]
 
->>> insert()
-The insert() method in Python lists is used to add an element at a specific position (index) within the list. It modifies the list in place and does not return a new list.
+##  insert()
+The insert():-  method in Python lists is used to add an element at a specific position (index) within the list. It modifies the list in place and does not return a new list.
 Syntax:
     list.insert(index, element)
 # EXAMPLE
@@ -95,8 +96,8 @@ print(my_list)
 --- Output:['grape', 'apple', 'orange', 'mango', 'banana', 'cherry', 'kiwi']
 
 
->>> remove()
-The remove() method in Python lists is used to remove the first occurrence of a specified value from the list. 
+##  remove()
+The remove() :- method in Python lists is used to remove the first occurrence of a specified value from the list. 
 Syntax:
 list_name.remove(value)
 . value - jis item ko hatna ho 
@@ -122,16 +123,16 @@ fruits = ['apple', 'banana', 'cherry']
 x = fruits.pop(1)
 ---Output:banana
 
->>>sort()
+### sort() : - 
 method that will sort the list alphanumerically, ascending, by default:
 
-Example
+# Example
 thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
 thislist.sort()
 print(thislist)
 ---Output: ['banana', 'kiwi', 'mango', 'orange', 'pineapple']
 
-To sort descending, use the keyword argument 'reverse = True':
+# To sort descending, use the keyword argument 'reverse = True':
 Example
 Sort the list descending:
 thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
@@ -139,8 +140,8 @@ thislist.sort(reverse = True)
 print(thislist)
 ---Output:['pineapple', 'orange', 'mango', 'kiwi', 'banana']
 
->>> reverse()
-The reverse() method reverses the sorting order of the elements.
+### reverse()
+The reverse() :- method reverses the sorting order of the elements.
 Syntax:
    list.reverse()
 my_list = [1, 2, 3, 4, 5]
@@ -150,7 +151,7 @@ print(f"Reversed list: {my_list}")
 --- Output:Original list: [1, 2, 3, 4, 5]
            Reversed list: [5, 4, 3, 2, 1]
 
->>> Iterating through a List (for loop)
+###  Iterating through a List (for loop)
 my_list = ["apple", "banana", "cherry"]
 for item in my_list:
     print(item)
@@ -162,7 +163,7 @@ for i in range(len(my_list)):
 for index, value in enumerate(my_list):
     print(f"Index: {index}, Value: {value}")
 
->>nested list
+# Nested list
 m = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 odds = []
 
@@ -173,7 +174,7 @@ for r in m:
 print(odds)
 ---output: [1, 3, 5, 7, 9]
 
->>>> TUPLES
+###### Q,WHAT IS  TUPLES ?
    A Tuple is a collection which is ordered and unchangeable.
 >  it is declared as
       tuple1= ("1,2,"shiv","raj")
@@ -220,38 +221,4 @@ T = [start;stop:step]
   t2= tuple1[0:5:2]
 >> print(t2)
  -- output:(12,14,16)
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
