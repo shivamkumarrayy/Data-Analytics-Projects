@@ -1,4 +1,4 @@
-## dictiuonary in python 
+## dictionary in python 
    dictionary is a collection which is unordered ,changeable and indexed.
   > in python dictionaries are written within curly({}) brackets,and they have keys and values
 # create and print dictionary
