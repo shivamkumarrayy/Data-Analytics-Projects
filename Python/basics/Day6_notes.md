@@ -1,4 +1,4 @@
-## dictionary in python 
+## Dictionary in python 
    dictionary is a collection which is unordered ,changeable and indexed.
   > in python dictionaries are written within curly({}) brackets,and they have keys and values
 # create and print dictionary
@@ -46,4 +46,45 @@
     print(dict1)
     dict1.pop('model')
     print(dict1)
-3. update() -- iska use values insert me hota hai     
+3. update() -- iska use values insert me hota hai
+
+#  Q2. Word Frequency Counter
+ # Question:
+
+Count frequency of each word in a string:
+
+Input: "python is easy and python is powerful"
+
+✅ Answer (Python Code):
+sentence = "python is easy and python is powerful"
+words = sentence.split()
+
+freq = {}
+for word in words:
+    freq[word] = freq.get(word, 0) + 1
+
+print(freq)
+
+Output:
+{'python': 2, 'is': 2, 'easy': 1, 'and': 1, 'powerful': 1}
+
+
+# Q3. Student Marks
+# Question:
+
+From the dictionary:
+
+marks = {"Amit":80, "Rohit":92, "Sita":77}
+
+
+Print students who scored more than 85.
+
+✅ Answer (Python Code):
+marks = {"Amit":80, "Rohit":92, "Sita":77}
+
+for name, score in marks.items():
+    if score > 85:
+        print(name, "scored", score)
+
+Output:
+Rohit scored 92
